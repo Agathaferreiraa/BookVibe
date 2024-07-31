@@ -1,0 +1,2 @@
+# BookVibe
+ BookVibe é um projeto de design de página desenvolvido com HTML e CSS, que oferece uma experiência visual atraente para uma loja de livros online. O projeto foca em criar uma interface elegante e intuitiva para explorar e destacar uma coleção de livros. A combinação cuidadosa de layout e estilo visa proporcionar uma navegação agradável e uma apresentação clara dos produtos. Confira o README para mais detalhes sobre o design e a implementação.
