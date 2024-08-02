@@ -2,7 +2,10 @@
 
 :root {
     --cor-de-fundo: #F4D9D0;
-    --cor-secundaria: #FFEAE3;   
+    --cor-secundaria: #FFEAE3;
+    --cor-destaque: #921A40;
+    --cor-texto: linear-gradient(97.54deg, #ee366aee 35.49%, #d8669b 165.37%);
+
 }
 
 body {
