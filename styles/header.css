@@ -1,5 +1,5 @@
 .cabeçalho__menu-hamburguer{
-    width: 15px;
+    width: 30px;
     height: 24px;   
     background-image: url("../img/Menu.svg");
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@
 
 .container__logo{
     display: flex;
-    gap: 1em
+    gap: 1em;
 }
 
 .container__imagem{
@@ -52,6 +52,8 @@
 
  .lista-menu__titulo{
     color: var(--cor-destaque);
+    font-weight: 700;
+    font-size: 1.1rem;
  }
 
  .lista-menu__link {
@@ -63,3 +65,6 @@
     text-transform: uppercase;
  }
  
+ .container__botao {
+    display: none;
+ }

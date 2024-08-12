@@ -5,9 +5,10 @@
     <meta http-equiv="X-AU-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookVibe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-   
+       
 </head>
 
 <body>
@@ -44,6 +45,54 @@
             <a href="#"><img src="img/perfil.svg" alt="Meu perfil" class="container__imagem container__imagem__menu"></a>
         </div>
     </header>
+
+<section class="banner"> 
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua proxima leitura?">
+</section>
+
+<section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+</section>
+
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka e Spring Boot da BookVibe"></div>
+      <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança da BookVibe"></div>
+      <div class="swiper-slide"><img src="img/Javascript.svg" alt= "Livro sobre Javascript assertivo da BookVibe"></div>
+      <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt= "Livro guia Front-end da BookVibe"></div>
+      <div class="swiper-slide"><img src="img/Portugol.svg" alt= "Livro sobre Portugol da BookVibe"></div>
+      <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt= "Livro sobre Acessibilidade da BookVibe"></div>
+    </div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+    });
+</script>
 </body>
+
 
 </html>
