@@ -54,7 +54,7 @@
 
 <section class="carrossel">
     <h2 class="carrossel__titulo">Novos lançamentos</h2>
-</section>
+
 
 <!-- Slider main container -->
 <div class="swiper">
@@ -76,10 +76,112 @@
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-  </div>
+
+    <div class="card">
+        <div class="card__descricao">
+            <div class="descricao">
+                <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+            </div>
+            <img src="img/Angular.svg" class="descricao__imagem" alt="">
+        </div>
+
+        <div class="card__botoes">
+            <ul class="botoes">
+                <li class="botoes__item"><img src="img/coracao.svg" alt="Favoritar livro"></li>
+                <li class="botoes__item"><img src="img/compra.svg" alt="Adicionar no carrinho de compras"></li>
+            </ul>
+            <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+    </div>
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+    
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/Gestão2.svg" alt="Livro sobre Gestão de Produtos da BookVibe"></div>
+          <div class="swiper-slide"><img src="img/Tuning.svg" alt="Livro sobre Turning de SQL da BookVibe"></div>
+          <div class="swiper-slide"><img src="img/Arquitetura.svg" alt= "Livro sobre Arquitetura de Software de Distribuido da BookVibe"></div>
+          <div class="swiper-slide"><img src="img/UX.svg" alt= "Livro UX Estratégico da BookVibe"></div>
+          <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt= "Livro sobre Métricas Ágeis da BookVibe"></div>
+          <div class="swiper-slide"><img src="img/Liderança.svg" alt= "Livro sobre Acessibilidade da BookVibe"></div>
+        </div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="card">
+            <div class="card__descricao">
+                <div class="descricao">
+                    <img src="img/Estrelinhas.svg" alt="estrelas autora">
+                    <h3 class="descricao__titulo">Autora do Mês</h3>
+                    <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                    <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                </div>
+                <img src="img/Perfil-escritora.svg" alt="">
+            </div>
+    
+            <div class="card__botoes">
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="img/coracao.svg" alt="Favoritar livro"></li>
+                    <li class="botoes__item"><img src="img/compra.svg" alt="Adicionar no carrinho de compras"></li>
+                </ul>
+                <a href="#" class="botoes__ancora">Saiba mais</a>
+            </div>
+        </div>    
+  </section>
+
+  <section class="topicos">
+    <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="topicos__lista">
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Android</a>
+        </li>
+
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Marketing Digital</a>
+        </li>
+
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Agile</a>
+        </li>
+
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Startups</a>
+        </li>
+
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">HTML & CSS</a>
+        </li>
+
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Python</a>
+        </li>
+
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">OO</a>
+        </li>
+
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Java</a>
+        </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+  </section>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
