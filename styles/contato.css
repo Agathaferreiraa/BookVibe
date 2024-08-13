@@ -1,7 +1,7 @@
 .contato {
     background-color: var(--cor-secundaria);
     padding: 1em;
-
+    box-sizing: border-box;
 }
 
 .contato__titulo, .contato__texto {
