@@ -15,7 +15,7 @@
     <header class="cabeçalho">
         <div class="container container__logo" >
             <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
+            <label for="menu" class="container__rotulo">
                 <span class="cabeçalho__menu-hamburguer container__imagem"></span>
             </label>
                 <ul class="lista-menu">
@@ -42,7 +42,7 @@
 
         <ul class="opcoes">
             <input type="checkbox" id="opcoes-menu" class="opcoes-botao">
-            <label for="opcoes-menu">
+            <label for="opcoes-menu" class="opcoes__rotulo">
             <li class="opcoes__item">Categorias</li>
             </label>
 
@@ -68,9 +68,17 @@
         </ul>
 
         <div class="container">
-            <a href="#"><img src="img/coracao.svg" alt="Meus favoritos" class="container__imagem container__imagem__menu"></a>
-            <a href="#"><img src="img/compra.svg" alt="Carrinho de compras" class="container__imagem container__imagem__menu"></a>
-            <a href="#"><img src="img/perfil.svg" alt="Meu perfil" class="container__imagem container__imagem__menu"></a>
+            <a href="#" >
+                <img src="img/coracao.svg" alt="Meus favoritos" class="container__imagem container__imagem container__imagem-transparente">
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/compra.svg" alt="Carrinho de compras" class="container__imagem container__imagem__menu">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/perfil.svg" alt="Meu perfil" class="container__imagem container__imagem__menu">
+                <p class="container__texto">Meu perfil</p>
+            </a>
         </div>
     </header>
 
@@ -85,26 +93,27 @@
 
 
 <!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
+ <div class="carrossel__container">
+    <div class="swiper">
+        <!-- Additional required wrapper -->
 
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
   
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka e Spring Boot da BookVibe"></div>
-      <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança da BookVibe"></div>
-      <div class="swiper-slide"><img src="img/Javascript.svg" alt= "Livro sobre Javascript assertivo da BookVibe"></div>
-      <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt= "Livro guia Front-end da BookVibe"></div>
-      <div class="swiper-slide"><img src="img/Portugol.svg" alt= "Livro sobre Portugol da BookVibe"></div>
-      <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt= "Livro sobre Acessibilidade da BookVibe"></div>
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka e Spring Boot da BookVibe"></div>
+            <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança da BookVibe"></div>
+            <div class="swiper-slide"><img src="img/Javascript.svg" alt= "Livro sobre Javascript assertivo da BookVibe"></div>
+            <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt= "Livro guia Front-end da BookVibe"></div>
+            <div class="swiper-slide"><img src="img/Portugol.svg" alt= "Livro sobre Portugol da BookVibe"></div>
+            <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt= "Livro sobre Acessibilidade da BookVibe"></div>
+        </div>
+  
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
     <div class="card">
         <div class="card__descricao">
             <div class="descricao">
@@ -123,30 +132,33 @@
             <a href="#" class="botoes__ancora">Saiba mais</a>
         </div>
     </div>
+ </div>
   </section>
 
   <section class="carrossel">
     <h2 class="carrossel__titulo">Mais vendidos</h2>
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-    
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide"><img src="img/Gestão2.svg" alt="Livro sobre Gestão de Produtos da BookVibe"></div>
-          <div class="swiper-slide"><img src="img/Tuning.svg" alt="Livro sobre Turning de SQL da BookVibe"></div>
-          <div class="swiper-slide"><img src="img/Arquitetura.svg" alt= "Livro sobre Arquitetura de Software de Distribuido da BookVibe"></div>
-          <div class="swiper-slide"><img src="img/UX.svg" alt= "Livro UX Estratégico da BookVibe"></div>
-          <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt= "Livro sobre Métricas Ágeis da BookVibe"></div>
-          <div class="swiper-slide"><img src="img/Liderança.svg" alt= "Livro sobre Acessibilidade da BookVibe"></div>
-        </div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
 
+    <div class="carrossel__container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+    
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+      
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/Gestão2.svg" alt="Livro sobre Gestão de Produtos da BookVibe"></div>
+                <div class="swiper-slide"><img src="img/Tuning.svg" alt="Livro sobre Turning de SQL da BookVibe"></div>
+                <div class="swiper-slide"><img src="img/Arquitetura.svg" alt= "Livro sobre Arquitetura de Software de Distribuido da BookVibe"></div>
+                <div class="swiper-slide"><img src="img/UX.svg" alt= "Livro UX Estratégico da BookVibe"></div>
+                <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt= "Livro sobre Métricas Ágeis da BookVibe"></div>
+                <div class="swiper-slide"><img src="img/Liderança.svg" alt= "Livro sobre Acessibilidade da BookVibe"></div>
+            </div>
+      
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
         <div class="card">
             <div class="card__descricao">
                 <div class="descricao">
@@ -165,7 +177,8 @@
                 </ul>
                 <a href="#" class="botoes__ancora">Saiba mais</a>
             </div>
-        </div>    
+        </div>
+    </div>
   </section>
 
   <section class="topicos">
@@ -206,8 +219,10 @@
   </section>
 
   <section class="contato">
-    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-    <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+    <div class="contato__descricao">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+    </div>
     <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
   </section>
 
@@ -215,10 +230,85 @@
 
   <footer class="rodape">
     <h2 class="rodapé__titulo">Desenvolvido por Ágatha</h2>
+    <ul class="lista-rodape">
+        <li class="lista-rodape__titulo">Educação</li>
+        <li class="lista-rodape__item">                                                 
+        <img src="img/CasaDoCodigo.svg" alt="Logo da casa do código">
+        <a href="#" class="lista-rodape__link">Casa do Código</a>    
+        </li>
+        <li class="lista-rodape__item">                                                 
+            <img src="img/Caelum.svg" alt="Logo da Caelum">
+            <a href="#" class="lista-rodape__link">Caelum</a>    
+        </li>        
+    </ul>
+
+    <ul class="lista-rodape">
+        <li class="lista-rodape__titulo">Educação Online</li>
+        <li class="lista-rodape__item">
+            <img src="img/Alura.svg" alt="Logo da Alura">
+            <a href="#" class="lista-rodape__link">Alura</a>
+        </li>
+        <li class="lista-rodape__item">                                                 
+            <img src="img/AluraEmpresas.svg" alt="Logo da Alura Empresas">
+            <a href="#" class="lista-rodape__link">Alura Para Empresas</a>    
+        </li>
+        <li class="lista-rodape__item">                                                 
+            <img src="img/AluraLATAM.svg" alt="Logo da Alura">
+            <a href="#" class="lista-rodape__link">Alura LATAM</a>    
+        </li>
+        <li class="lista-rodape__item">                                                 
+            <img src="img/AluraStart.svg" alt="Logo da Alura">
+            <a href="#" class="lista-rodape__link">Alura Start</a>    
+        </li>
+        <li class="lista-rodape__item">                                                 
+            <img src="img/MusicDot.svg" alt="Logo da MusicDot">
+            <a href="#" class="lista-rodape__link">MusicDot</a>    
+        </li>
+        <li class="lista-rodape__item">                                                 
+            <img src="img/AluraLingua.svg" alt="Logo da Alura">
+            <a href="#" class="lista-rodape__link">Alura Língua</a>    
+        </li>
+        <li class="lista-rodape__item">                                                 
+            <img src="img/PM3.svg" alt="Logo da Alura">
+            <a href="#" class="lista-rodape__link">PM3</a>    
+        </li>        
+    </ul>
+
+    <ul class="lista-rodape">
+        <li class="lista-rodape__titulo">Comunidade</li>
+        <li class="lista-rodape__item">
+            <img src="img/HipstersTech.svg" alt="Logo da Hipsters Tech">
+            <a href="#" class="lista-rodape__link">Hipsters ponto Tech</a>
+        </li>
+        <li class="lista-rodape__item">
+            <img src="img/ScubaDev.svg" alt="Logo da Scuba Dev">
+            <a href="#" class="lista-rodape__link">Scuba Dev</a>
+        </li>
+        <li class="lista-rodape__item">
+            <img src="img/LayersTech.svg" alt="Logo da Layers Tech">
+            <a href="#" class="lista-rodape__link">Layers ponto Tech</a>
+        </li>
+        <li class="lista-rodape__item">
+            <img src="img/LikeABoss.svg" alt="Logo da Like a Boss">
+            <a href="#" class="lista-rodape__link">Like a Boss</a>
+        </li>
+        <li class="lista-rodape__item">
+            <img src="img/CarreiraSemFronteira.svg" alt="Logo da Carreira sem Fronteira">
+            <a href="#" class="lista-rodape__link">Carreira sem Fronteira</a>
+        </li>
+        <li class="lista-rodape__item">
+            <img src="img/HipstersJobs.svg" alt="Logo da Hipsters Jobs">
+            <a href="#" class="lista-rodape__link">Hipsters ponto Jobs</a>
+        </li>
+        <li class="lista-rodape__item">
+            <img src="img/GUJ.svg" alt="Logo da GUJ">
+            <a href="#" class="lista-rodape__link">GUJ</a>
+        </li>
+    </ul>
   </footer>
   
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script>
     const swiper = new Swiper('.swiper', {
         spaceBetween: 10,
         slidesPerView: 3,
@@ -227,7 +317,7 @@
             type: 'bullets',
         },
     });
-    </script>
+ </script>
 </body>
 
 

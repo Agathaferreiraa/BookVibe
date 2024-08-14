@@ -34,53 +34,84 @@ img.logo {
 }
 
 .container__imagem__menu{
-    margin-left: -1.5em;
-    
+    margin-left: -1.5em;    
 }
 
- .lista-menu{
+.container__botao:checked~.container__rotulo > .cabeçalho__menu-hamburguer {
+    background-image: url("../img/menu_black_24dp\ 1.svg");
+}
+
+.container__botao:checked~.container__rotulo {
+    background: var(--cor-texto);
+}
+
+.lista-menu{
     display: none;
     position: absolute;
     top: 100%;
     width: 60vw;  
- }
+}
 
- .container__botao:checked ~ .lista-menu{
+.container__botao:checked ~ .lista-menu{
     display: block;
- }
+}
 
- .lista-menu__titulo, 
- .lista-menu__item{
+.opcoes-botao:checked~.opcoes__rotulo >.opcoes__item {
+    background: var(--cor-texto);
+    color: var(--branco);
+}
+
+.opcoes__item {
+    padding: 0.75em;
+}
+
+.lista-menu__titulo, 
+.lista-menu__item{
     padding: 1em;
     background-color: var(--cor-secundaria);
- }
+}
 
- .lista-menu__titulo{
+.lista-menu__item:hover {
+    background: var(--cor-texto);
+}
+
+.lista-menu__item:hover > .lista-menu__link {
+    -webkit-text-fill-color: var(--branco);
+    text-decoration: none;
+}
+
+.lista-menu__titulo{
     color: var(--cor-destaque);
     font-weight: 700;
     font-size: 1.1rem;
- }
+}
 
- .lista-menu__link {
+.lista-menu__link {
     background: var(--cor-texto);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-decoration: none;
     text-transform: uppercase;
- }
+}
  
- .container__botao {
+.container__botao {
     display: none;
- }
+}
 
- .container__titulo {
+.container__titulo {
     display: none;
- }
+}
 
- .opcoes {
+.opcoes {
     display: none;
- }
+}
+
+.container__texto {
+    display: none;
+}
+
+
 
  @media screen and (min-width: 1024px) {
     .container__titulo, 
@@ -100,11 +131,12 @@ img.logo {
     }
 
     .opcoes {
-      display: flex;  
+        padding-right: 5em;
+        display: flex;
+       
     }
 
     .opcoes__item {
-        padding: 0 1em;
         text-transform: uppercase;        
     }
 
@@ -128,5 +160,32 @@ img.logo {
 
     .opcoes-botao {
         display: none;
+    }
+ }
+
+
+ @media screen and (min-width: 1728px){
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+        padding-left: 4em;
+    }
+
+    .cabeçalho {
+        padding: 0 3em;
+    }
+
+    .container__imagem{
+        padding: 0;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
     }
  }
